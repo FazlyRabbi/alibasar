@@ -1,6 +1,7 @@
 import { HiArrowNarrowLeft } from "react-icons/hi";
 import { BiSearch } from "react-icons/bi";
 import { BsBellFill } from "react-icons/bs";
+import Link from "next/link";
 const CompareResultPage = () => {
   return (
     <div className="min-h-screen bg-[#dddddd] relative">
@@ -50,7 +51,10 @@ const CompareResultPage = () => {
             <p className="absolute top-1.5 right-2 text-[#939393] text-[0.95rem]">
               <BiSearch />
             </p>
-            <input type="text" className="w-full bg-[#dddddd] py-1" />
+            <input
+              type="text"
+              className="w-full bg-[#dddddd]  focus:border-none py-1  outline-none border-none px-2"
+            />
           </div>
         </div>
 
@@ -81,9 +85,11 @@ const CompareResultPage = () => {
           <div className="col-span-2 py-2">23 March 2023 at 12:04</div>
           <div className="col-span-3 py-2">16 /54</div>
           <div className="col-span-1 py-2">
-            <p className=" bg-[#389F7A] inline-block px-5 rounded-md text-white/90 py-1.5">
-              Excel
-            </p>
+            <Link href={`/exel`}>
+              <p className=" bg-[#389F7A] inline-block px-5 rounded-md text-white/90 py-1.5">
+                Excel
+              </p>
+            </Link>
           </div>
           <div className="col-span-1 py-2"></div>
         </div>
@@ -96,9 +102,11 @@ const CompareResultPage = () => {
           <div className="col-span-2 py-2">23 March 2023 at 12:04</div>
           <div className="col-span-3 py-2">16 /54</div>
           <div className="col-span-1 py-2">
-            <p className=" bg-[#389F7A] inline-block px-5 rounded-md text-white/90 py-1.5">
-              Excel
-            </p>
+            <Link href={`/exel`}>
+              <p className=" bg-[#389F7A] inline-block px-5 rounded-md text-white/90 py-1.5">
+                Excel
+              </p>
+            </Link>
           </div>
           <div className="col-span-1 py-2"></div>
         </div>
