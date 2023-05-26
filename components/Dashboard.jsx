@@ -13,6 +13,7 @@ import { Tooltip, Button } from "@material-tailwind/react";
 const Dashboard = () => {
   const [open, setOpen] = useState(false);
   const [popup, setPopup] = useState(false);
+  const [search, setSearch] = useState(false);
 
   const handleMenu = () => {
     setOpen(true);
@@ -27,8 +28,8 @@ const Dashboard = () => {
       {open ? (
         <div
           className={` 
-       
-       absolute   bg-[#464545] xl:hidden  left-0 z-[40] min-h-screen text-white p-10`}
+          max-w-[12rem] 
+       absolute   bg-[#464545] xl:hidden transition-all duration-300  left-0 z-[40] min-h-screen text-white pl-8`}
         >
           <FaTimes
             className=" absolute top-5 right-5  cursor-pointer"
@@ -64,7 +65,7 @@ const Dashboard = () => {
       )}
 
       {/* {large device} */}
-      <div className={"  xl:block bg-[#E9E9E9] ps-10 space-y-4 hidden "}>
+      <div className={"  xl:block border-r border-[#D8D8D8] bg-[#E9E9E9] max-w-[12rem] pl-7 space-y-4 hidden "}>
         <h3 className="pt-5 pb-14 text-lg text-[#FFB320]">Alibasar</h3>
         <div className="text-sm space-y-4">
           <p className="font-bold">Compare List</p>
@@ -112,19 +113,68 @@ const Dashboard = () => {
           <p>My list</p>
 
           <p className="flex gap-2 px-10 justify-center items-center text-xl">
-            <div className="w-[12rem] relative">
-              <BiSearch
-                className="absolute top-2
-               right-2 text-[#939393] text-[1.2rem]"
-              />
+            <div className="w-[12rem] relative   transition-all duration-500">
+              <span
+                onClick={() => setSearch(true)}
+                className={`
+                
+                absolute 
+                
+               top-2
+               
+  
+  
+                 right-2 text-[#939393] text-[1.2rem] block  cursor-pointer`}
+              >
+                <svg
+                  width="15"
+                  height="16"
+                  viewBox="0 0 15 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <ellipse
+                    cx="6.16663"
+                    cy="6.625"
+                    rx="5"
+                    ry="5.25"
+                    fill="#7E869E"
+                    fill-opacity="0.25"
+                    stroke="#A3A3A3"
+                    stroke-width="1.2"
+                  />
+                  <path
+                    d="M13.6666 14.5L11.1666 11.875"
+                    stroke="#222222"
+                    stroke-width="1.2"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </span>
+
+              {/* <BiSearch
+                
+              /> */}
 
               <input
                 type="text"
-                className="w-full rounded-md  bg-[#dddddd]  focus:border-none py-1  outline-none border-none px-2"
+                className={`
+                   transition-all duration-300
+                 rounded-md 
+                  
+
+                 ${search ? "visible w-full" : " invisible w-0"}
+                   text-black
+                  bg-[#dddddd]  text-[.8rem] focus:border-none py-1  outline-none border-none px-2
+                  
+                  `}
+                placeholder="search here..."
               />
             </div>
+
             <p className="relative w-5">
               <span className="bell-round top-0"></span>
+
 
               <BsBellFill
                 className=" cursor-pointer"
