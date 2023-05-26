@@ -50,21 +50,21 @@ const CompareResultPage = () => {
             <TabsHeader className=" space-x-4">
               <Tooltip
                 className="bg-[#fff2d8] max-w-[24rem] py-4 text-black text-[.7rem]"
-                content={`if you pick "Low/High", we'll rank the suppliers with the lowest values. For example" The supplier with lowest price in each row"`}
+                content={`If you pick "Low/High", we'll rank the suppliers with the lowest values.For example “ The supplier with lowest price in each row” 🫡`}
                 placement="bottom-start"
               >
                 <Tab value={"low-high"}>Low/High</Tab>
               </Tooltip>
               <Tooltip
                 className="bg-[#fff2d8] max-w-[24rem] py-4 text-black text-[.7rem]"
-                content={`if you pick "Low/High", we'll rank the suppliers with the lowest values. For example" The supplier with lowest price in each row"`}
+                content={`If you pick "High/Low", we'll rank the suppliers with the lowest values.For example “ The suppliers with the most quantity in each row”`}
                 placement="bottom-start"
               >
                 <Tab value={"high-low"}>High/Low</Tab>
               </Tooltip>
               <Tooltip
                 className="bg-[#fff2d8] max-w-[24rem] py-4 text-black text-[.7rem]"
-                content={`if you pick "Low/High", we'll rank the suppliers with the lowest values. For example" The supplier with lowest price in each row"`}
+                content={`If you pick "Unfilled Rows",  We will show the rows that are not filled.This means that the products are not available and difficult to get.`}
                 placement="bottom-start"
               >
                 <Tab value={"unfilled"}>Unfilled/Row(s)</Tab>
