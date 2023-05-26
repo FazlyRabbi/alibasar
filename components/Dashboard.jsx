@@ -9,6 +9,8 @@ import { FaTimes } from "react-icons/fa";
 import { FaBars } from "react-icons/fa";
 import { useState } from "react";
 import Link from "next/link";
+import { Tooltip, Button } from "@material-tailwind/react";
+
 
 const Dashboard = () => {
   const [open, setOpen] = useState(false);
@@ -19,7 +21,7 @@ const Dashboard = () => {
   };
 
   return (
-    <div className="grid grid-cols-10 xl:grid-cols-6 px-4 lg:px-0 w-full min-h-screen relative overflow-x-hidden">
+    <div className="grid grid-cols-10 xl:grid-cols-6 px-4 xl:px-0 w-full min-h-screen relative overflow-x-hidden">
       {/* left side */}
 
       {/* mobile device */}
@@ -28,7 +30,7 @@ const Dashboard = () => {
         <div
           className={` 
        
-       absolute   bg-[#464545] lg:hidden  left-0 z-[40] min-h-screen text-white p-10`}
+       absolute   bg-[#464545] xl:hidden  left-0 z-[40] min-h-screen text-white p-10`}
         >
           <FaTimes
             className=" absolute top-5 right-5  cursor-pointer"
@@ -64,7 +66,7 @@ const Dashboard = () => {
       )}
 
       {/* {large device} */}
-      <div className={"  lg:block bg-[#E9E9E9] ps-10 space-y-4 hidden "}>
+      <div className={"  xl:block bg-[#E9E9E9] ps-10 space-y-4 hidden "}>
         <h3 className="pt-5 pb-14 text-lg text-[#FFB320]">Alibasar</h3>
         <div className="text-sm space-y-4">
           <p className="font-bold">Compare List</p>
@@ -96,15 +98,15 @@ const Dashboard = () => {
       <div
         className={
           open
-            ? "lg:col-span-10 xl:col-span-6 relative col-span-10"
-            : "lg:col-span-8 xl:col-span-5 relative col-span-10"
+            ? " xl:col-span-6 relative col-span-10"
+            : " xl:col-span-5 relative col-span-10"
         }
       >
         <div className="text-[#929292] flex justify-between py-2 border-b">
           <div>
             <span
               onClick={() => handleMenu()}
-              className="lg:hidden block text-xl cursor-pointer z-50"
+              className="xl:hidden block text-xl cursor-pointer z-50"
             >
               <FaBars />
             </span>
