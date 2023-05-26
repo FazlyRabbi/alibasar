@@ -1,6 +1,7 @@
 import { HiArrowNarrowLeft } from "react-icons/hi";
 import { BiSearch } from "react-icons/bi";
 import { BsBellFill } from "react-icons/bs";
+import { IoMdArrowDropup } from "react-icons/io";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { Tooltip, Button } from "@material-tailwind/react";
@@ -47,14 +48,24 @@ const CompareResultPage = () => {
       <Tabs value="low-high">
         <div className="lg:mx-12 xl:mx-20 lg:mt-10 bg-white/90 h-[calc(100vh-5.6rem)]">
           <div className="flex px-10 py-8 justify-between text-[0.75rem] gap-10">
-            <TabsHeader className=" space-x-4">
+            <TabsHeader
+              className=" space-x-4  bg-transparent"
+              indicatorProps={{
+                className: "bg-[#F3F3F3]   shadow-none ",
+              }}
+            >
               <Tooltip
-                className="bg-[#fff2d8] max-w-[24rem] py-4 text-black text-[.7rem]"
+                className="bg-[#fff2d8] 
+                
+                
+             
+                relative  max-w-[24rem] py-4 text-black text-[.7rem]"
                 content={`If you pick "Low/High", we'll rank the suppliers with the lowest values.For example “ The supplier with lowest price in each row” 🫡`}
                 placement="bottom-start"
               >
                 <Tab value={"low-high"}>Low/High</Tab>
               </Tooltip>
+
               <Tooltip
                 className="bg-[#fff2d8] max-w-[24rem] py-4 text-black text-[.7rem]"
                 content={`If you pick "High/Low", we'll rank the suppliers with the lowest values.For example “ The suppliers with the most quantity in each row”`}
@@ -62,6 +73,7 @@ const CompareResultPage = () => {
               >
                 <Tab value={"high-low"}>High/Low</Tab>
               </Tooltip>
+
               <Tooltip
                 className="bg-[#fff2d8] max-w-[24rem] py-4 text-black text-[.7rem]"
                 content={`If you pick "Unfilled Rows",  We will show the rows that are not filled.This means that the products are not available and difficult to get.`}
@@ -73,11 +85,11 @@ const CompareResultPage = () => {
 
             <div className="w-[28rem] relative">
               <p className="absolute top-1.5 right-2 text-[#939393] text-[0.95rem]">
-                <BiSearch />
+                <BiSearch  className="text-[#353434] font-bold  text-[.9rem]"/>
               </p>
               <input
                 type="text"
-                className="w-full bg-[#dddddd]  focus:border-none py-1  outline-none border-none px-2"
+                className="w-full bg-[#F6F6F6]  rounded-md border border-[#DDDDDD]  py-1  outline-none  px-4"
               />
             </div>
           </div>
