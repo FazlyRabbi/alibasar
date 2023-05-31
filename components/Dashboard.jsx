@@ -10,6 +10,9 @@ import { useState } from "react";
 import Link from "next/link";
 import { Tooltip, Button } from "@material-tailwind/react";
 
+import Image from "next/image";
+import bell from "../img/bell.jpeg"
+
 const Dashboard = () => {
   const [open, setOpen] = useState(false);
   const [popup, setPopup] = useState(false);
@@ -172,14 +175,14 @@ const Dashboard = () => {
               />
             </div>
 
-            <p className="relative w-5">
+            <p className="relative w-5" onClick={() => setPopup(!popup)}>
               <span className="bell-round top-0"></span>
 
 
-              <BsBellFill
-                className=" cursor-pointer"
-                onClick={() => setPopup(!popup)}
-              />
+                  <Image  src={bell}  height={100} width={100} alt="bell" className="min-h-[35px] min-w-[35px]"/>
+
+
+          
             </p>
           </p>
         </div>

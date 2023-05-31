@@ -5,7 +5,8 @@ import { IoMdArrowDropup } from "react-icons/io";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { Tooltip, Button } from "@material-tailwind/react";
-
+import Image from "next/image";
+import bell from "../../img/bell.jpeg"
 import {
   Tabs,
   TabsHeader,
@@ -41,7 +42,7 @@ const CompareResultPage = () => {
           Results
         </p>
         <p className="text-xl">
-          <BsBellFill />
+        <Image  src={bell}  height={35} width={35} alt="bell" />
         </p>
       </div>
 

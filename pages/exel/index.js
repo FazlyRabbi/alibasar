@@ -1,6 +1,11 @@
 import React from "react";
 import { BsBellFill, BsArrowLeft } from "react-icons/bs";
 import { useRouter } from "next/router";
+
+import Image from "next/image";
+import bell from "../../img/bell.jpeg"
+
+
 function index() {
   const route = useRouter();
 
@@ -47,7 +52,7 @@ function index() {
           </p>
         </div>
         <div>
-          <BsBellFill className="text-[1.3rem] cursor-pointer" />
+        <Image  src={bell}  height={35} width={35} alt="bell" />
         </div>
       </div>
 
