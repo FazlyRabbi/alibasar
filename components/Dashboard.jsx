@@ -228,7 +228,7 @@ const Dashboard = () => {
             <div className="popup opacity-0 hidden py-4 text-gray-50/50">
               <div className="flex justify-between items-center hover:bg-[#A3A2A2]/20 duration-300 px-4">
                 <p className="text-xs">view</p>
-                <p className="text-[0.65rem] text-[#929292]">
+                <p className="text-[0.65rem] mr-[28px] text-[#929292]">
                   • One overview of all suppliers
                 </p>
               </div>
@@ -237,7 +237,7 @@ const Dashboard = () => {
               </p>
               <div className="flex justify-between items-center hover:bg-[#A3A2A2]/20 duration-300 px-4 border-b border-[#A3A2A2]/20 pb-1">
                 <p className="text-[0.70rem]">Webpage </p>
-                <p className="text-[0.55rem] text-[#929292]">
+                <p className="text-[0.65rem] text-[#929292]">
                   • Share this page with your suppliers
                 </p>
               </div>
@@ -307,7 +307,7 @@ const Dashboard = () => {
             <div className="popup opacity-0 hidden py-4 text-gray-50/50">
               <div className="flex justify-between items-center hover:bg-[#A3A2A2]/20 duration-300 px-4">
                 <p className="text-xs">view</p>
-                <p className="text-[0.65rem] text-[#929292]">
+                <p className="text-[0.65rem] mr-[28px] text-[#929292]">
                   • One overview of all suppliers
                 </p>
               </div>
@@ -316,7 +316,7 @@ const Dashboard = () => {
               </p>
               <div className="flex justify-between items-center hover:bg-[#A3A2A2]/20 duration-300 px-4 border-b border-[#A3A2A2]/20 pb-1">
                 <p className="text-[0.70rem]">Webpage </p>
-                <p className="text-[0.55rem] text-[#929292]">
+                <p className="text-[0.65rem] text-[#929292]">
                   • Share this page with your suppliers
                 </p>
               </div>
@@ -385,7 +385,7 @@ const Dashboard = () => {
       {/* BELL ICON POPUP */}
       {popup ? (
         <div className="absolute  transition-all duration-300 bg-white top-8 right-2 sm:right-10 text-xl text-[#9D9D9D]">
-          <div className="w-80 h-auto border border-[#9D9D9D] rounded-md py-3 px-6">
+          <div className="w-80 h-auto border border-[#EBEBEB] rounded-md py-3 px-6">
             <div className="text-[0.68rem] leading-4 border-b py-2">
               <p>Main file : 24 - 03 Original New</p>
               <div className="flex justify-between relative text-[#1A1919] gap-2">

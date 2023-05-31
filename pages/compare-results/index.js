@@ -23,7 +23,7 @@ const CompareResultPage = () => {
   };
 
   return (
-    <div className="min-h-screen bg-[#dddddd] relative">
+    <div className="min-h-screen bg-[#dddddd4d] relative">
       <div className="h-12 bg-[#FFFFFF]/90 flex items-center justify-between px-10 text-[#939393]">
         <div className="flex items-center gap-2">
           <p className="text-xl">
@@ -35,9 +35,9 @@ const CompareResultPage = () => {
           <p className="text-xl">
             <BiSearch />
           </p>
-          <p className="text-[0.65rem]">Overview Page</p>
+          <p className="text-[0.65rem] font-bold">Overview Page</p>
         </div>
-        <p className="text-[0.75rem] ml-[-160px]">
+        <p className="text-[0.75rem] ml-[-160px] font-bold">
           <span className="text-black">24-03 Original New /</span> Coompare
           Results
         </p>

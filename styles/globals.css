@@ -18,7 +18,7 @@
 }
 .table-colum:hover .popup {
   left: 150px;
-  @apply absolute w-[15rem] h-[10rem]   bg-[#303030] text-white rounded-md duration-500 opacity-100 block;
+  @apply absolute w-[18rem] h-[10rem]   bg-[#303030] text-white rounded-md duration-500 opacity-100 block;
 }
 .moveproductShow {
   right: 15px;

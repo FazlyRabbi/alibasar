@@ -48,10 +48,10 @@ function index() {
               </svg>
             </span>
           </p>
-          <p className="text-[0.65rem]">Compare Function Page</p>
+          <p className="text-[0.65rem] font-bold">Compare Function Page</p>
         </div>
         <p className="text-[0.75rem] ml-[-160px]">
-          <span className="text-black">24-03 Original New /</span> Seller 1
+          <span className="text-black font-bold">24-03 Original New /</span> Seller 1
         </p>
         <p className="text-xl">
         <Image
