@@ -115,7 +115,7 @@ const Dashboard = () => {
           </div>
           <p>My list</p>
 
-          <p className="flex gap-2 px-10 justify-center items-center text-xl">
+          <div className="flex gap-2 px-10 justify-center items-center text-xl">
             <div className="w-[12rem] relative   transition-all duration-500">
               <span
                 onClick={() => setSearch(true)}
@@ -175,16 +175,18 @@ const Dashboard = () => {
               />
             </div>
 
-            <p className="relative w-5" onClick={() => setPopup(!popup)}>
-              <span className="bell-round top-0"></span>
+            <div className="relative w-5" onClick={() => setPopup(!popup)}>
+             
+             
+             <span className="bell-round    top-[.4rem] -mr-2 block absolute "></span>
 
 
                   <Image  src={bell}  height={100} width={100} alt="bell" className="min-h-[35px] min-w-[35px]"/>
 
 
           
-            </p>
-          </p>
+            </div>
+          </div>
         </div>
 
         <div className="grid grid-cols-12 px-2 sm:px-10  py-2 border-b text-[0.75rem] sm:text-sm gap-5 sm:gap-10 text-[#D7D7D7]">
@@ -214,8 +216,10 @@ const Dashboard = () => {
           </div>
         </div>
         <div className="grid grid-cols-12 px-2 sm:px-10 py-2 text-[0.75rem] sm:text-sm gap-5 sm:gap-10 text-[#D7D7D7] hover:bg-[#F8F8F8] duration-300">
+
+          
           <div className="col-span-5 xl:col-span-6 relative table-colum ">
-            <div className="popup opacity-0 hidden py-4 text-gray-50/50">
+            <div className="popup space-y-1 opacity-0 hidden py-4 text-gray-50/50">
               <div className="flex justify-between items-center hover:bg-[#A3A2A2]/20 duration-300 px-4">
                 <p className="text-xs">view</p>
                 <p className="text-[0.65rem] text-[#929292]">
@@ -293,8 +297,10 @@ const Dashboard = () => {
           </div>
         </div>
         <div className="grid grid-cols-12 px-2 sm:px-10 py-2 text-[0.75rem] sm:text-sm gap-5 sm:gap-10 text-[#D7D7D7] hover:bg-[#F8F8F8] duration-300">
-          <div className="col-span-5 xl:col-span-6 relative table-colum ">
-            <div className="popup opacity-0 hidden py-4 text-gray-50/50">
+          <div className="col-span-5  xl:col-span-6 relative table-colum ">
+           
+           
+            <div className="popup space-y-1 opacity-0 hidden py-4 text-gray-50/50">
               <div className="flex justify-between items-center hover:bg-[#A3A2A2]/20 duration-300 px-4">
                 <p className="text-xs">view</p>
                 <p className="text-[0.65rem] text-[#929292]">
@@ -374,23 +380,31 @@ const Dashboard = () => {
       </div>
       {/* BELL ICON POPUP */}
       {popup ? (
-        <div className="absolute  transition-all duration-300 bg-white top-8 right-2 sm:right-10 text-xl text-[#9D9D9D]">
-          <div className="w-80 h-auto border border-[#9D9D9D] rounded-md py-3 px-6">
-            <div className="text-[0.68rem] leading-4 border-b py-2">
+        
+        <div className="absolute bg-[#F5F5F5]  transition-all duration-300  top-10  right-[3rem] lg:right-[2rem] rounded-sm text-xl text-[#9D9D9D]">
+       
+       
+          <div className=" w-80 h-auto border border-[#EBEBEB] rounded-md  ">
+       
+       
+       <div className=" bg-white  px-5 pt-2 pb-1 shadow-sm"> 
+
+
+            <div className="text-[0.68rem] leading-4 border-b py-3">
               <p>Main file : 24 - 03 Original New</p>
               <div className="flex justify-between relative text-[#1A1919] gap-2">
                 <p>A new supplier has submitted their information.</p>
                 <span className="bg-[#e13f3f]/50 right-0 rounded-full h-2 w-2 absolute top-1"></span>
               </div>
             </div>
-            <div className="text-[0.68rem] leading-4 border-b py-2">
+            <div className="text-[0.68rem] leading-4 border-b py-3">
               <p>Main file : 24 - 03 Original New</p>
               <div className="flex justify-between relative text-[#1A1919] gap-2">
                 <p>A new supplier has submitted their information.</p>
                 <span className="bg-[#e13f3f]/50 right-0 rounded-full h-2 w-2 absolute top-1"></span>
               </div>
             </div>
-            <div className="text-[0.68rem] leading-4 border-b py-2">
+            <div className="text-[0.68rem] leading-4 py-3 ">
               <p>
                 Main file “24 - 03 Original New with no frame just to check how
                 long it ” has been created 🥳
@@ -403,12 +417,21 @@ const Dashboard = () => {
                 <span className="bg-[#e13f3f]/50 right-0 rounded-full h-2 w-2 absolute top-1"></span>
               </div>
             </div>
-            <div className="text-[0.68rem] leading-3 border-b py-2">
+
+       </div>
+
+
+
+        <div className="  px-5  py-2">
+
+
+         
+            <div className="text-[0.68rem] leading-3 mb-2 border-[#E4E0E0] border-b py-2">
               <p>
                 Main file “24 - 03 Original New with no frame just to check how
                 long it ” has been created 🥳
               </p>
-              <div className="flex justify-between relative text-[#1A1919]">
+              <div className="flex justify-between py-3 relative text-[#1A1919]">
                 <p>
                   A “Collecting-Page” has been created. Share this page with
                   your suppliers to collect their information.
@@ -417,8 +440,11 @@ const Dashboard = () => {
               </div>
             </div>
             <div className="text-[0.68rem] leading-3 text-[#1A1919] py-2">
-              <p>More</p>
+              <p className=" font-bold">More</p>
             </div>
+        </div>
+
+
           </div>
         </div>
       ) : (
